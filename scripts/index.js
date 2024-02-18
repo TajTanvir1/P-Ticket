@@ -15,7 +15,13 @@ for (const seat of allSeat) {
         const seatNo = e.target.innerText;
         const selectedContainer = document.getElementById('selected-container');
 
-        // ---------------------------------- Seat info update on click
+        if(countAdd > 4){
+         alert('Invalid - You can purchase only 4 tickets');
+         seat.removeEventListener("click")
+        }
+
+        // ---------------------------------- Seat info update on click 
+
         const economy = "Economy";
         const price = 550;
 
@@ -26,6 +32,8 @@ for (const seat of allSeat) {
         p2.innerText = economy;
         const p3 = document.createElement("p");
         p3.innerText = price;
+
+        
 
         div.appendChild(p);
         div.appendChild(p2);
@@ -75,4 +83,3 @@ for (const seat of allSeat) {
 
     })
 }
-
