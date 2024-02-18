@@ -44,7 +44,6 @@ for (const seat of allSeat) {
         // ----------------------------------- Grand Total Price
         const grandTotalPrice = document.getElementById('grand-total');
         const coupon = document.getElementById('coupon-input');
-        console.log(coupon.value);
         grandTotalPriceCount = totalPriceCount;
         grandTotalPrice.innerText = grandTotalPriceCount;
 
