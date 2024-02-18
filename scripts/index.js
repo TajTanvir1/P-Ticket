@@ -12,6 +12,7 @@ for (const seat of allSeat) {
         document.getElementById('seat-left').innerText = countSub;
         seat.classList.add('bg-[#1DD100]', 'text-white');
 
+        
         const seatNo = e.target.innerText;
         const selectedContainer = document.getElementById('selected-container');
 
@@ -19,6 +20,8 @@ for (const seat of allSeat) {
          alert('Invalid - You can purchase only 4 tickets');
          seat.removeEventListener("click")
         }
+
+        // seat.removeEventListener("click", handleClick);
 
         // ---------------------------------- Seat info update on click 
 
@@ -39,10 +42,11 @@ for (const seat of allSeat) {
         div.appendChild(p2);
         div.appendChild(p3);
 
+        
         selectedContainer.appendChild(div)
         div.classList.add('flex', 'justify-between', 'my-2');
-
-        // ----------------------------------- Total Price update
+        
+                // ----------------------------------- Total Price update
         const totalPrice = document.getElementById('total-price');
         totalPriceCount = price * countAdd;
 
