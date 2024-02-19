@@ -16,7 +16,7 @@
 
 <body class="mt-5">
    <!-- Navbar Start here -->
-   <div class="mx-14">
+   <div class="mx-4 lg:mx-14">
       <div class="navbar bg-base-100 font-raleway">
          <div class="navbar-start">
             <div class="dropdown">
@@ -52,7 +52,7 @@
    </div>
 
    <!-- Header Start Here --> 
-   <header class="mx-14 mt-6">      
+   <header class="mx-4 lg:mx-14 mt-6">      
       <!-- -------------------Banner Start -->
       <div class="hero min-h-screen bg-center bg-contain bg-no-repeat flex flex-col justify-center items-center" style="background-image: url(images/banner.png);">
          <div class="hero-overlay bg-opacity-60"></div>
@@ -69,10 +69,9 @@
          </div>
        </div>
       
-      <!-- -----------------------Banner End -->
 
       <!-- Count Bar -->
-      <div class="flex gap-8 justify-center relative bottom-14">
+      <div class="flex flex-col lg:flex-row gap-8 ml-32 lg:ml-0 justify-center relative bottom-14">
          <div class="border-[#1DD100] border-b-4 w-72 bg-white flex justify-center p-4 py-6 gap-4 rounded-2xl">
             <div>
                <img src="images/people.png" alt="">
@@ -110,7 +109,7 @@
       <section class="mx-20 mt-16 flex flex-col items-center">
          <h1 class="font-raleway text-4xl font-bold mb-10 text-center">Best Offers for you</h1>
 
-         <div class="flex gap-8">
+         <div class="flex flex-col lg:flex-row gap-8">
             <!-- 15% OFF -->
             <div class="bg-[#FFBF0F] w-[573px] flex h-[220px] items-center rounded-3xl">
                <div class="font-inter p-12">
@@ -145,7 +144,7 @@
       </section>
 
       <!-- Ticket Information Container -->
-      <section class="border-[#1DD100] border-t-2 mt-32 rounded-t-[88px] bg-[#F7F8F8] pb-[120px]">
+      <section  id="buy-tickets" class="border-[#1DD100] border-t-2 mt-32 rounded-t-[88px] bg-[#F7F8F8] pb-[120px]">
          <div class="paribahan-text mt-24 text-center">
             <h1 class="text-4xl font-bold font-raleway text-[#030712]">
                P.H Paribahan
@@ -155,7 +154,7 @@
          </div>
 
          <!-- Ticket Details -->
-         <div class="bg-white w-[85%] mx-auto flex rounded-2xl mb-6">
+         <div class="bg-white lg:w-[85%] mx-auto flex rounded-2xl mb-6">
             <!-- 1 -->
             <div class="m-8">
                <div class="flex gap-[230px]">
@@ -163,7 +162,7 @@
                      <div>
                         <img src="images/bus-logo.png" class="" alt="">
                      </div>
-                     <div id="buy-tickets" class="pl-3">
+                     <div class="pl-3">
                         <h1 class="text-[#030712] font-raleway text-3xl font-bold">Greenline Paribahan</h1>
                         <p class="text-[#03071299] font-inter text-lg">Coach-009-WEB ! AC_Business</p>
                      </div>
@@ -210,8 +209,8 @@
          </div>
 
          <!-- Seat Planning -->
-         <div class="w-[85%] bg-white mx-auto p-6 rounded-2xl flex">
-            <div class="border-[#03071233] border-dashed border-r-2 flex-1 pr-6">
+         <div class="lg:w-[85%] bg-white mx-auto p-6 rounded-2xl flex flex-col lg:flex-row">
+            <div class="border-[#03071233] lg:border-dashed border-none lg:border-r-2 flex-1 pr-6">
                <!-- Seat Details -->
                <div class="m-6">
                   <h1 class="text-2xl font-semibold font-raleway border-[#03071233] border-dashed border-b-2 pb-6">Select
@@ -333,7 +332,7 @@
                   <!-- Coupon Input -->
                   <div id="coupon-container" class="bg-white w-full p-2 flex justify-between rounded-xl">
                      <input id="coupon-input" type="text" value="" placeholder="Have any coupon?" class="pl-3 rounded-lg w-full">
-                     <button id="input-btn" class="btn  bg-[#1DD100] text-white">Apply</button>
+                     <button id="input-btn" class="btn  bg-[#1DD100] text-white btn-disabled">Apply</button>
                   </div>
                   <div class="flex justify-between py-4">
                      <h3 class="text-[#030712] font-medium">Grand Total</h3>
@@ -364,11 +363,11 @@
                            placeholder="Enter your email id">
                      </div>
                   </div>
-                 <div id="modal-btn" disabled class="">
-                  <button id=""
-                  class="btn w-full bg-[#1DD100] text-white font-raleway mt-6 text-xl font-extrabold font-raleway " onclick="my_modal_5.showModal()">Next</button>
+                 <div>
+                  <button  id="modal-btn"
+                  class="btn w-full bg-[#1DD100] text-white font-raleway mt-6 text-xl font-extrabold font-raleway btn-disabled" onclick="my_modal_5.showModal()">Next</button>
                  </div>
-                     <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+                     <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle bg-[#F7F8F8]">
                         <div class="modal-box text-center">
                            <img src="images/success.png" alt="" class="mx-auto mt-6">
                            <h3 class="font-bold text-lg text-[#27AE60] my-8">SUCCESS</h3>
@@ -378,7 +377,7 @@
                           <div class="modal-action">
                             <form method="dialog">
                               <!-- if there is a button in form, it will close the modal -->
-                              <div class="flex justify-center mr-20">
+                              <div class="flex justify-center mr-24">
                                  <button class="btn bg-[#27AE60] text-white btn-wide text-center rounded-full mt-4 mb-6 text-xl">Continue</button>
                               </div>
                             </form>
