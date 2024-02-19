@@ -105,7 +105,7 @@ passengerName.addEventListener("input", function() {
         passengerNumber.addEventListener("input", function() {
             const numberInput = passengerNumber.value;
         
-            if(numberInput.length > 1){
+            if(numberInput.length > 0){
                 modalBtn.classList.remove('btn-disabled')
             }
         })
