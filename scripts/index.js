@@ -63,10 +63,8 @@ for (const seat of allSeat) {
             const couponInputContainer = document.getElementById('coupon-container');
             inputBtn.addEventListener('click', function () {
                 // input value
-                const couponInput = document.getElementById('coupon-input').value;
-                
-                if (couponInput === 'NEW15') {
-                    
+                const couponInput = document.getElementById('coupon-input').value;                
+                if (couponInput === 'NEW15') {                    
                     grandTotalPriceCount = totalPriceCount * .85;
                     grandTotalPrice.innerText = grandTotalPriceCount;
                     couponInputContainer.classList.add('hidden');
@@ -87,13 +85,10 @@ for (const seat of allSeat) {
                 }
             })
         }
-
-
-
     })
 }
 
-
+// ----------------------------- Passenger Info & Next button enable for modal
 const passengerName = document.getElementById('passenger-name');
 const passengerNumber = document.getElementById('passenger-number')
 const modalBtn = document.getElementById('modal-btn');
