@@ -60,7 +60,6 @@ for (const seat of allSeat) {
         if (totalPriceCount >= 2200) {
             const inputBtn = document.getElementById('input-btn');
             const couponInputContainer = document.getElementById('coupon-container');
-            couponInputContainer.classList.remove('hidden');
             inputBtn.addEventListener('click', function () {
                 // input value
                 const couponInput = document.getElementById('coupon-input').value;
@@ -97,3 +96,8 @@ for (const seat of allSeat) {
 const passengerName = document.getElementById('passenger-name').value;
 const passengerNumber = document.getElementById('passenger-number').value;
 const modalBtn = document.getElementById('modal-btn');
+
+if(passengerName.length() > 0){
+    modalBtn.removeAttribute('disabled');
+    console.log(modalBtn.length());
+}

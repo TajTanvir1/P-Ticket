@@ -45,7 +45,7 @@
             </ul>
          </div>
          <div class="navbar-end">
-            <a class="btn bg-[#1DD1001A] border-[#1DD10066] border-2 text-xl font-bold px-6 text-[#1DD100]">Bus <img
+            <a href="#bus-seat" class="btn bg-[#1DD1001A] border-[#1DD10066] border-2 text-xl font-bold px-6 text-[#1DD100]">Bus <img
                   src="images/bus-icon.png" alt=""></a>
          </div>
       </div>
@@ -64,7 +64,7 @@
             Yes, you can run unit tests and view the results directly within the app. The <br> integrated testing
             features allow for a streamlined .
          </p>
-         <button class="btn text-black bg-[#1DD100] border-none text-xl font-bold text-center font-raleway btn-lg ">Buy Ticket</button>
+         <button class="btn text-black bg-[#1DD100] border-none text-xl font-bold text-center font-raleway btn-lg "><a href="#buy-tickets">Buy Ticket</a></button>
            </div>
          </div>
        </div>
@@ -145,7 +145,7 @@
       </section>
 
       <!-- Ticket Information Container -->
-      <section class="border-[#1DD100] border-t-2 mt-24 rounded-t-[88px] bg-[#F7F8F8] pb-[120px]">
+      <section class="border-[#1DD100] border-t-2 mt-32 rounded-t-[88px] bg-[#F7F8F8] pb-[120px]">
          <div class="paribahan-text mt-24 text-center">
             <h1 class="text-4xl font-bold font-raleway text-[#030712]">
                P.H Paribahan
@@ -163,7 +163,7 @@
                      <div>
                         <img src="images/bus-logo.png" class="" alt="">
                      </div>
-                     <div class="pl-3">
+                     <div id="buy-tickets" class="pl-3">
                         <h1 class="text-[#030712] font-raleway text-3xl font-bold">Greenline Paribahan</h1>
                         <p class="text-[#03071299] font-inter text-lg">Coach-009-WEB ! AC_Business</p>
                      </div>
@@ -177,11 +177,11 @@
                   </div>
                </div>
                <div class="bg-[#F7F8F8] mt-6 h-[250px] rounded-2xl">
-                  <div class="flex justify-between border-[#03071233] border-dashed border-b font-raleway p-6">
+                  <div class="flex justify-between border-[#03071233] border-dashed border-b-2 font-raleway p-6">
                      <p class="text-[#03071299]">Route</p>
                      <p class="text-[#030712]">Dhaka - Sylhet </p>
                   </div>
-                  <div class="flex justify-between border-[#03071233] border-dashed border-b font-raleway p-6">
+                  <div class="flex justify-between border-[#03071233] border-dashed border-b-2 font-raleway p-6">
                      <p class="text-[#03071299]">Departure Time</p>
                      <p class="text-[#030712]">9:00 PM</p>
                   </div>
@@ -211,12 +211,12 @@
 
          <!-- Seat Planning -->
          <div class="w-[85%] bg-white mx-auto p-6 rounded-2xl flex">
-            <div class="border-[#03071233] border-dashed border-r flex-1 pr-6">
+            <div class="border-[#03071233] border-dashed border-r-2 flex-1 pr-6">
                <!-- Seat Details -->
                <div class="m-6">
-                  <h1 class="text-2xl font-semibold font-raleway border-[#03071233] border-dashed border-b pb-6">Select
+                  <h1 class="text-2xl font-semibold font-raleway border-[#03071233] border-dashed border-b-2 pb-6">Select
                      Your Seat</h1>
-                  <div class="flex justify-between font-inter border-[#03071233] border-dashed border-b py-6">
+                  <div class="flex justify-between font-inter border-[#03071233] border-dashed border-b2 py-6">
                      <div class="flex">
                         <div>
                            <img src="images/seat-gray.png" alt="">
@@ -309,16 +309,16 @@
                </div>
             </div>
 
-            <div class="m-6">
+            <div id="bus-seat" class="m-6">
                <!-- Total & Info -->
-               <h1 class="text-2xl font-semibold font-raleway border-[#03071233] border-dashed border-b pb-6">Select
+               <h1 class="text-2xl font-semibold font-raleway border-[#03071233] border-dashed border-b-2 pb-6">Select
                   Your Seat</h1>
                <!-- Price Count -->
                <div class="w-[430px] bg-[#F7F8F8] font-inter rounded-2xl mt-6 px-6">
-                  <div class="border-[#03071233] border-dashed border-b flex justify-between py-4">
+                  <div class="border-[#03071233] border-dashed border-b-2 flex justify-between py-4">
                      <h3 class="text-[#030712] font-medium">Seat <span id="seat-count"
-                           class="bg-[#1DD100] text-white p-2 font-bold text-sm rounded-lg">0</span></h3>
-                     <h3 class="text-[#030712] font-medium">Class</h3>
+                           class="bg-[#1DD100] text-white px-2 py-1 font-bold text-sm rounded-lg">0</span></h3>
+                     <h3 class="text-[#030712] font-medium pr-8">Class</h3>
                      <h3 class="text-[#030712] font-medium">Price</h3>
                   </div>
                   
@@ -331,7 +331,7 @@
                   </div>
 
                   <!-- Coupon Input -->
-                  <div id="coupon-container" class="bg-white w-full p-2 flex justify-between rounded-xl hidden">
+                  <div id="coupon-container" class="bg-white w-full p-2 flex justify-between rounded-xl">
                      <input id="coupon-input" type="text" value="" placeholder="Have any coupon?" class="pl-3 rounded-lg w-full">
                      <button id="input-btn" class="btn  bg-[#1DD100] text-white">Apply</button>
                   </div>
@@ -364,8 +364,10 @@
                            placeholder="Enter your email id">
                      </div>
                   </div>
-                  <button id="modal-btn"
-                     class="btn w-full bg-[#1DD100] text-white font-raleway mt-6 text-xl font-extrabold font-raleway hidden" onclick="my_modal_5.showModal()">Next</button>
+                 <div id="modal-btn" disabled class="">
+                  <button id=""
+                  class="btn w-full bg-[#1DD100] text-white font-raleway mt-6 text-xl font-extrabold font-raleway " onclick="my_modal_5.showModal()">Next</button>
+                 </div>
                      <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
                         <div class="modal-box text-center">
                            <img src="images/success.png" alt="" class="mx-auto mt-6">
@@ -384,9 +386,9 @@
                         </div>
                       </dialog>
                </div>
-               <div class="flex justify-around font-inter text-[#03071299] mt-4">
-                  <h3><a href="">Terms and Conditions</a></h3>
-                  <h3><a href="">Cancellation Policy</a></h3>
+               <div class="flex justify-around font-inter text-[#03071299] mt-4 underline">
+                  <h3><a href="#">Terms and Conditions</a></h3>
+                  <h3><a href="#">Cancellation Policy</a></h3>
                </div>
             </div>
          </div>
